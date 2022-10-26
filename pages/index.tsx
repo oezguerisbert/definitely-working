@@ -90,6 +90,11 @@ const Home: NextPage = () => {
             description="Instantly deploy your Next.js site to a public URL with Vercel."
             link="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           />
+          <Card
+            title="Vertical Tabs &rarr;"
+            description="Click to see how the Vertical Tabs look like"
+            link="./verticalTabsExample"
+          />
         </Grid>
       </Box>
 
