@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { MantineProvider } from '@mantine/core'
+import { MantineProvider, Box } from '@mantine/core'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
@@ -23,7 +23,15 @@ export default function App(props: AppProps) {
           colorScheme: 'light',
         }}
       >
-        <Component {...pageProps} />
+        <Box
+          sx={(theme) => ({
+            height: '100vh',
+            padding: 60,
+            width: '100vw',
+          })}
+        >
+          <Component {...pageProps} />
+        </Box>
       </MantineProvider>
     </>
   )
